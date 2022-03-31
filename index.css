@@ -1,0 +1,114 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+body, html{
+    position: relative;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ #form_contato{
+     width: 100%;
+     display: flex;
+     height: auto;
+     justify-content: center;
+     align-items: center;
+     background-color: #1d2834;
+     overflow: hidden;
+     flex-wrap: wrap;
+ };
+
+ #form_contato div{
+     width: 50vh;
+     height: 100%;
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     margin: 10px auto;
+     flex-direction: column;
+ }
+
+ #form_contato div iframe{
+     width: 500px;
+     height: 400px;
+     transition: all 1.5s ease-in-out;
+ }
+
+#form_contato div iframe:hover{
+  transform: scale(1,1);
+}
+
+#contato_form form{
+  width: 400px;
+  display: flex;
+  aling-items: center;
+  text-aling: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+input, textarea{
+  width: 400px;
+  padding: 15;
+  outline: none;
+}
+
+input[type="submit"]{
+  width: 300px;
+  border-radis: 50px;
+  padding: 10px;
+  transition: all 0.8s ease;
+}
+input[type="submit"]houver{
+  cursor: ponter;
+  opacity: 0.8;
+  box-shadow: inset 0 0 15px #000;
+}
+
+//*responsivo*//
+@midia  (max-width: 900px){
+  #form_contato div iframe{
+    width:350px;
+    height:330px;
+  }
+  
+  input, textarea{
+    width: 350px;
+    padding:10px;
+  }
+  
+  input[type="submit"]{
+      width: 220px;
+    padding: 7px;
+  }
+  
+}
+
+@midia  (max-width: 680px){
+  #form_contato div iframe{
+    width:300px;
+    height:280px;
+  }
+  
+  input, textarea{
+    width: 300px;
+    padding:8px;
+  }
+  
+  input[type="submit"]{
+      width: 220px;
+    padding: 4px;
+  }
+  
+}
