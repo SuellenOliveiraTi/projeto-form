@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Protótipo da pagina CMA</title>
 </head>
 <body></body>
@@ -16,18 +16,34 @@
   <div class="container">
     <div id="form_contato">
         <div>
-            <form action="#">
+            <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+                <input type="hidden" name="accessKey" value="208bee8d-441b-408b-8c22-0d03a2619f83">
+
+                <input type="hidden" name="redirectTo" value="https://suellenoliveirati.github.io/projeto-form/">
+
+
                 <h2>Formulário para contato</h2>
                 <br></br>
-                <p>O formulário de contato serve para sabermos como podemos ajudar você. Quanto mais dados você preencher, melhor. Você poderá enviar sugestões, dicas, críticas, pedir informações, etc. Na parte direita você verá o mapa com a localização do CMA. Preencha o formulário de acordo com o que se pede, e não se preocupe, nós nunca compartilharemos seus dados pessoais.</p>
+                <p>O formulário de contato serve para sabermos como podemos ajudar você. Quanto mais dados você preencher, melhor. Você poderá enviar sugestões, dicas, críticas, pedir informações, etc.Na parte direita você verá o mapa com a localização do CMA. Preencha o formulário de acordo com o que se pede, e não se procupe, nós nunca compartilharemos seus dados pessoais.</p>
                 <br></br>
-                <input type="text" placeholder="Nome(Obrigatório)">
+                <label for="inputNome">Nome</label>
                 <br></br>
-                <input type="email" placeholder="Email (Obrigatorio)" required>
+                <input type="text" id="inputNome" name="name" placeholder="Digite seu nome(Obrigatório)">
                 <br></br>
-                <input type="Assunto" placeholder="Assunto (Obrigatorio)" required>
+
+                <label for="inputNome">Email</label>
                 <br></br>
-                <textarea cols="50" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+                <input type="email" id="inputNome" name="email" placeholder="Digite seu email (Obrigatorio)" required>
+                <br></br>
+
+                <label for="inputNome">Assunto</label>
+                <br></br>
+                <input type="Assunto" id="inputNome" name="subject" placeholder="Digite seu assunto (Obrigatorio)" required>
+                <br></br>
+
+                <label for="textAreaMensagem">Mensagem</label>
+                <br></br>
+                <textarea name="message" id="textAreaMesagem" cols="50" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
                 <br></br>
                 <input type="submit" value="Enviar">
             </form>
