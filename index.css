@@ -7,9 +7,15 @@
     font-family: 'roboto', sans-serif;
 }
 
-body, html{
+footer{
+  background: #fff;
+
+} 
+
+html{
     position: relative;
 }
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -43,7 +49,7 @@ h2{
      display: flex;
      justify-content:center;
      align-items: center;
-     margin: 10px auto;
+     margin: auto 80px  auto;
      flex-direction: column;
  }
 
@@ -84,6 +90,7 @@ input[type="submit"]houver{
   box-shadow: inset 0 0 15px #000;
 }
 
+
 //*responsivo*//
 @media  (max-width: 900px){
   #form_contato div iframe{
@@ -115,8 +122,8 @@ input[type="submit"]houver{
   }
   
   input[type="submit"]{
-      width: 220px;
-    padding: 4px;
+      width: 300px;
+    padding: 5px;
   }
   
 }
